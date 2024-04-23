@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: transparent;
+    list-style: none;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 100vh;
+}
+
+
+
+#square {
+    background: skyblue;
+    width: 100px;
+    height: 100px;
+    animation-name: boxer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes boxer{
+    from{
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to{
+        transform: translateX(1000px) rotate(720deg);
+    }
+} 
